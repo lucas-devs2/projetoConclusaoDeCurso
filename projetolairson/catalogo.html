@@ -5,16 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
+<style>
+    .cat{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    margin-top: 60px;
+    }
+    .del{
+    margin-left: 500px;
+    }
+</style>
 </head>
 <body>
     <h1 style="color: black; text-align: center; margin-top: 100px;">Catalogo</h1>
-    <img src="bebida.jpg" alt="foto" style="height: 300px; width: 250px; ">
-    <img src="bebida1.jpg" alt="foto" style="height: 300px; width: 250px; ">
-    <img src="bebida2.jpg" alt="foto" style="height: 300px; width: 250px; ">
-    <button onclick="deletar()"> deleta</button>
+    <div class="cat" id="2">
+       
+        <img src="bebida.jpg" alt="foto" style="height: 300px; width: 250px; " class="img" id="1">
+        <img src="bebida1.jpg" alt="foto" style="height: 300px; width: 250px; margin-left: 20px; ">
+        <img src="bebida2.jpg" alt="foto" style="height: 300px; width: 250px; margin-left: 20px; ">
+        <img src="assets/img/bar2.jpg" alt="" style="height: 300px; width: 250px; margin-left: 20px;">
+        <img src="assets/img/vinhos.jpg" alt="" style="height: 300px; width: 250px; margin-left: 20px;">
+    </div>
+    <button class="del" onclick="deletar()"> deletar</button>
+    
+    <label> Deseja Incluir novos produtos?</label>
+    <button action="novoproduto.html" style="margin-top: 100px;"> <a href="novoproduto.html">Sim</a> </button>
+<a href="#" onclick="document.getElementById('1').style.display='none'"> delete foto</a>
+    
     <script>
         function deletar(){
-            alert("deletado"); 
+            alert("deletado");
         }
         
     </script>

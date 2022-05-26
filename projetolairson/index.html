@@ -84,33 +84,99 @@ function limpa_formulário_cep_totalmente() {
             limpa_formulário_cep();
         }
     };
+function checar(){
+    if(document.getElementById('email').Equals('')){
+        echo('digite o email')
+    }
+}
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
 
     </script>
     </head>
 
     <body style="background-image: url('assets/img/bar.jpg');">
+
+        
     <!-- Inicio do formulario -->
-    <div style="text-align:center; margin-top: 200px; border: 10px solid whitesmoke; width: 505px; height: 400px; margin-left:550px;" >  
+<div style="text-align:center; margin-top: 200px; border: 10px solid whitesmoke; width: 505px; height: 400px; margin-left:550px;" >  
    
         <label style="margin-top:60px; color: rgb(255, 255, 255); font-size: 40px;">LOGIN</label>
         
-        <form method="get" action= "meu_callback">
+    <form method="get" class="needs-validation" action= "" novalidate>
         <label style="color: white">Email </label>
         <br>
-        <input name="email" type="text"  placeholder="Email" value="" size="30" maxlength="9"/></label><br />
+        <input name="email" type="text"  placeholder="Email" required="" value="" size="30" maxlength="9"/></label><br />
         <br>
         <label style="color: white;">Senha </label>
         <br>
-        <input name="senha" type="text"  placeholder="Senha" size="30" /></label><br />
-         
-         
-        <button action="catalago.html" type="button" class="btn btn-primary" style="margin-top:10px;"><a href="catalogo.html" style="color:black;">Entrar</a> </button>
+        <input name="senha" type="text"  placeholder="Senha" size="30" required /></label><br />
+        <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        <button action="catalago.html" type="submit" class="btn btn-primary" style="margin-top:10px;"><a href="catalogo.html" style="color:black;">Entrar</a> </button>
         <br>
         <br>
         <label style="color: white;">Esqueci a senha</label>
         <a href="#" style="width: 100px;"><i class="fab fa-youtube" style="width: 100px;"></i></a>
         <a href="#" style="width: 100px;"><i class="fab fa-facebook" style="width: 100px;"></i></a>
     </form>
+
+    <form class="row g-3">
+        <div class="col-md-4">
+
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">State</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
 </div>
       <div>
          
