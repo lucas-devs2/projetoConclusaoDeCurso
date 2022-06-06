@@ -11,6 +11,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Catalogo</title>
+
+  
+    <a href="#">
+       
+    </a>
+
+    <nav>
+      <ul style="background-color:antiquewhite ;">
+        <li> <a href="#baixar" class="btn btn-info">entre em contato</a></li>
+        <br>
+        <li> <a href="#Produto" class="btn btn-info"> Cadastrar Produto </a> </li>
+        <br>
+        <li> <a href="#" class="btn btn-info"> Quem somos nos </a> </li>
+      </ul>
+    </nav>
   <script>
 
     function limpa_formulário() {
@@ -38,28 +53,49 @@
   </script>
 </head>
 
-<body>
-  <h1 style="color: black; text-align: center; margin-top: 100px;">Catalogo</h1>
-  <label>Misto</label>
-  <img src="assets/img/prod1.jpg" alt="foto" style="height: 300px; width: 250px; ">
-  <label>X-Salada</label>
-  <img src="assets/img/prod2.jpg" alt="foto" style="height: 300px; width: 250px; ">
-  <label>X-Tudo</label>
-  <img src="assets/img/prod3.jpg" alt="foto" id="1" style="height: 300px; width: 250px; ">
-  <label>Calabresa</label>
-  <img src="assets/img/prod4.jpg" alt="foto" id="1" style="height: 300px; width: 250px; ">
+<body style="background-image: url('assets/img/footer.jpg') ;">
+  <div style="background-color:aqua;">
+  <h1 style="color: black; text-align: center;">Catalogo</h1>
+  <label>Planner</label>
+  <img src="assets/img/catalogo1.jpg" alt="foto" id="1" style="height: 300px; width: 250px; ">
+  <label>Agendas</label>
+  <img src="assets/img/catalogo2.jpg" alt="foto" style="height: 300px; width: 250px; ">
+  <label>Marca texto</label>
+  <img src="assets/img/catalogo3.jpg" alt="foto" id="3" style="height: 300px; width: 250px; ">
+  <label>Lapis de cor</label>
+  <img src="assets/img/novofundo.jpg" alt="foto" id="4" style="height: 300px; width: 250px; ">
   <a href="#" class="btn btn-primary" onclick="document.getElementById('1').style.display='none'">apagar foto</a>
-  <br />
-  <a href="#baixar" class="btn btn-info">entre em contato</a>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br /><br /><br />
-  <label style="display: flex; align-items: center; justify-content: center;">Adicione novos produtos</label>
-  <form class="formulario" style="display: flex; align-items: center; justify-content: center;">
+</div>
+
+<div style="background-color:darksalmon;">
+  <label>Canetas Coloridas</label>
+  <img src="assets/img/canetas.jpg" alt="foto" id="1" style="height: 300px; width: 250px; ">
+  <label>Canetas</label>
+  <img src="assets/img/canetas2.jpg" alt="foto" style="height: 300px; width: 250px; ">
+  <label>Marca texto</label>
+  <img src="assets/img/marcatexto.jpg" alt="foto" id="3" style="height: 300px; width: 250px; ">
+  <label>Post it</label>
+  <img src="assets/img/post-it.jpg" alt="foto" id="4" style="height: 300px; width: 250px; ">
+  <a href="#" class="btn btn-primary" onclick="document.getElementById('1').style.display='none'">apagar foto</a>
+</div>
+
+<div style="background-color:lightgreen">
+  <label>Mapa</label>
+  <img src="assets/img/globo.jpg" alt="foto" id="1" style="height: 300px; width: 250px; ">
+  <label>Fichario</label>
+  <img src="assets/img/fichario.jpg" alt="foto" style="height: 300px; width: 250px; ">
+  <label>Caderno</label>
+  <img src="assets/img/caderno.jpg" alt="foto" id="3" style="height: 300px; width: 250px; ">
+  <label>Grampos</label>
+  <img src="assets/img/grmpos.jpg" alt="foto" id="4" style="height: 300px; width: 250px; ">
+  <a href="#" class="btn btn-primary" onclick="document.getElementById('1').style.display='none'">apagar foto</a>
+</div>
+ 
+  <a name="Produto">
+  
+  <form class="formulario" style="display: flex; align-items: center; justify-content: center; background-color:cornflowerblue;" >
     <div class="form-group">
-      <label for="exampleInputEmail1"></label>
+      <h1 style="display: flex; align-items: center; justify-content: center; background-color:cornflowerblue;">Adicione novos produtos </h1>
       <input type="email" class="form-control" id="produto" style="width: 300px;" placeholder="produto">
       <small id="emailHelp" class="form-text text-muted">!</small>
     </div>
@@ -67,6 +103,7 @@
       <input class="form-control" style="width: 300px;" id="preco" placeholder="Preço">
     </div>
     <button type="submit" class="btn btn-primary">Cadastrar</button>
+    <a href="#formulario" onclick="limpa_formulário()" style="color:black ;">Limpar dados digitados</a>
     <a href="" onclick="mostrar()" class="btn btn-info" style="margin-top: 80px; margin-left: -95px;">mostrar dados</a>
   </form>
   <br />
@@ -103,25 +140,17 @@
   <br />
   <br />
   <br />
-  <br /><br /><br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br /><br /><br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br /><br /><br />
-<div>
+ 
+  <h1 style="display: flex; align-items: center; justify-content: center;">Contato</h1>
+<div style="display: flex; align-items: center; justify-content: center; background-image: url('assets/img/footer.jpg') ;" >
+  
   <a name="baixar">
     <ul>
       <li>
         telefone: (87)98787675656
       </li>
       <li>
-        email: lojasanduiche@gmail.com
+        email: Papelaria@gmail.com
       </li>
       <li>
         endereço: rua 1 
